@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>PatientManagement</display-name>
+   <servlet>
+        <servlet-name>AddPatientServlet</servlet-name>
+        <servlet-class>com.patient.AddPatientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPatientServlet</servlet-name>
+        <url-pattern>/AddPatientServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditPatientServlet</servlet-name>
+        <servlet-class>com.patient.EditPatientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditPatientServlet</servlet-name>
+        <url-pattern>/EditPatientServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeletePatientServlet</servlet-name>
+        <servlet-class>com.patient.DeletePatientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePatientServlet</servlet-name>
+        <url-pattern>/DeletePatientServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
