@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 	            ResultSet rs = ps.executeQuery();
 
 	            if (rs.next()) {
-	                ww session = request.getSession();
+	                HttpSession session = request.getSession();
 	                session.setAttribute("username", username);
 	                response.sendRedirect("view_patients.jsp");
 	            } else {
